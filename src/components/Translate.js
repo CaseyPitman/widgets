@@ -6,7 +6,7 @@ const options = [
   { label: "Afrikaans", value: "af" },
   { label: "Arabic", value: "ar" },
   { label: "Hindi", value: "hi" },
-  { label: 'Dutch', value: 'nl'}
+  { label: "Dutch", value: "nl" },
 ];
 
 const Translate = () => {
@@ -27,16 +27,13 @@ const Translate = () => {
         selected={language}
         onSelectedChange={setLanguage}
       />
+      <hr />
+      <h3 className='ui header'>Output</h3>
+      <Convert language={language} text={text} />
     </div>
   );
 };
 
 export default Translate;
 
-
-
-
-// Google Translate API Key
-
 // AIzaSyCHUCmpR7cT_yDFHC98CZJy2LTms-IwDlM
-
