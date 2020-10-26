@@ -36,4 +36,4 @@ const Translate = () => {
 
 export default Translate;
 
-// AIzaSyCHUCmpR7cT_yDFHC98CZJy2LTms-IwDlM
+// 
