@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Accordion from "./components/Accordion";
 import Search from "./components/Search";
 import Dropdown from "./components/Dropdown";
+import ColorText from "./components/ColorText";
 import Translate from "./components/Translate";
 import Route from "./components/Route";
 import Header from "./components/Header";
@@ -27,17 +28,30 @@ const options = [
     value: "red",
   },
   {
+    label: "Orange",
+    value: "orange",
+  },
+  {
     label: "Yellow",
     value: "yellow",
+  },
+  {
+    label: "Green",
+    value: "green",
   },
   {
     label: "Blue",
     value: "blue",
   },
   {
-    label: "Green",
-    value: "green",
+    label: "Indigo",
+    value: "indigo",
   },
+  {
+    label: "Violet",
+    value: "violet",
+  },
+
 ];
 
 const App = () => {
@@ -61,7 +75,7 @@ const App = () => {
           selected={selected}
           onSelectedChange={setSelected}
         />
-        
+        <ColorText selected={selected} />
       </Route>
 
       <Route path='/translate'>
